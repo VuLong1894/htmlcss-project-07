@@ -1,0 +1,34 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Common */
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input,
+select,
+button,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
