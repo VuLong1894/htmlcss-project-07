@@ -11,6 +11,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Common */
@@ -31,4 +32,69 @@ button,
 textarea {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-top: 20px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 135px;
+}
+
+.contact__email-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.contact__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  border: 1px solid rgba(93, 59, 238, 0.2);
+  border-radius: 50%;
+}
+
+.contact__email {
+  margin-left: 10px;
+  color: #080415;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 24px;
+}
+
+.navbar__item {
+  padding: 20px;
+}
+
+.navbar__link {
+  color: #51586a;
+  font-size: 1.6rem;
 }
