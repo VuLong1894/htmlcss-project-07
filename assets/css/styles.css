@@ -206,3 +206,43 @@ textarea {
 .social__logo-wrap + .social__logo-wrap {
   margin-left: 20px;
 }
+
+/* Client */
+.client {
+  margin-top: 98px;
+}
+
+.client__inner {
+  display: flex;
+  align-items: flex-end;
+}
+
+.client__title {
+  position: relative;
+  width: 352px;
+  color: var(--primary-text-title-color);
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: -1.68px;
+  padding-left: 99px;
+  bottom: 0;
+}
+
+.client__title::before {
+  position: absolute;
+  content: "";
+  width: 86px;
+  height: 2px;
+  background: var(--primary-bg-color);
+  top: 22px;
+  left: 0;
+}
+
+.client__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 36px;
+  margin-left: 32px;
+}
