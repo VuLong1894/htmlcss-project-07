@@ -62,6 +62,14 @@ textarea {
   margin-left: 32px;
 }
 
+.section-heading {
+  color: var(--primary-text-title-color);
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -2.24px;
+}
+
 .section-desc {
   color: var(--primary-text-desc-color);
   font-size: 1.8rem;
@@ -245,4 +253,58 @@ textarea {
   align-items: center;
   gap: 36px;
   margin-left: 32px;
+}
+
+/* Special */
+.special {
+  margin-top: 133px;
+}
+
+.special__heading,
+.special__desc {
+  text-align: center;
+}
+
+.special__desc {
+  width: 570px;
+  margin: 20px auto 0px;
+}
+
+.special__list {
+  margin-top: 60px;
+  background: #fbfaff;
+}
+
+.special__item {
+  padding: 32px 42px;
+}
+
+.special__item-img-wrap {
+  width: 74px;
+  height: 74px;
+  background: #fff;
+  border: 1px solid rgba(8, 4, 21, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.special__item-img {
+  display: block;
+  width: 38px;
+  object-fit: cover;
+}
+
+.special__item-title {
+  margin-top: 22px;
+  color: var(--primary-text-title-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.special__item-desc {
+  margin-top: 15px;
 }
