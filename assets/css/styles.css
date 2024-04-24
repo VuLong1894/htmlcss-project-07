@@ -489,6 +489,10 @@ textarea {
   margin-top: 70px;
 }
 
+.about__video {
+  display: block;
+}
+
 .play-btn-wrap {
   position: absolute;
   display: flex;
@@ -518,4 +522,134 @@ textarea {
   font-weight: 700;
   line-height: 1.67;
   text-transform: uppercase;
+}
+
+/* Feedback */
+.feedback {
+  position: relative;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+
+.feedback__title {
+  width: 570px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback__heading {
+  letter-spacing: normal;
+}
+
+.feedback__desc {
+  margin-top: 20px;
+}
+
+.feedback__list {
+  width: 679px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 60px auto 0;
+}
+
+.feedback__content {
+  width: 679px;
+  max-width: 100%;
+  color: var(--primary-text-desc-color);
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.67;
+}
+
+.feedback__author {
+  padding-top: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.author__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author__image-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f29764;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.author__img {
+  display: block;
+  width: 100%;
+}
+
+.author__name {
+  color: var(--primary-text-title-color);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.33;
+  margin-left: 15px;
+}
+
+.author__job {
+  color: var(--primary-text-desc-color);
+  font-size: 1.6rem;
+  line-height: 1.81;
+}
+
+.feedback__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  margin: 40px 0 74px;
+}
+
+.feedback__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.feedback__dot {
+  background: rgba(8, 4, 21, 0.2);
+}
+
+.feedback__dot--active {
+  position: relative;
+  border: 1px solid var(--primary-bg-color);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback__dot--active::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  background: var(--primary-bg-color);
+}
+
+.feedback__decor-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.feedback__decor-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
