@@ -356,6 +356,7 @@ textarea {
 
 .project__item-content {
   width: 223px;
+  max-width: 100%;
 }
 
 .project__item-title {
@@ -390,6 +391,7 @@ textarea {
 .project__item-img {
   display: block;
   width: 246px;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -397,4 +399,123 @@ textarea {
   margin: 80px auto 0;
   background: #fff;
   color: var(--primary-text-title-color);
+}
+
+/* About */
+.about {
+  margin-top: 70px;
+  padding: 70px 0;
+}
+
+.about__content {
+  margin: 0 auto;
+  width: 570px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.about__welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__title {
+  color: var(--primary-bg-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.welcome__img {
+  margin-left: 9px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.about__heading {
+  margin-top: 10px;
+}
+
+.about__desc {
+  margin-top: 15px;
+}
+
+.about__achieve-list {
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 95px;
+}
+
+.about__achieve-list::before,
+.about__achieve-list::after {
+  content: "";
+  width: 946px;
+  height: 1px;
+  background: rgba(8, 4, 21, 0.2);
+  position: absolute;
+}
+
+.about__achieve-list::before {
+  top: 0;
+}
+
+.about__achieve-list::after {
+  bottom: 0;
+}
+
+.achieve-item-number {
+  color: var(--primary-text-title-color);
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.36;
+  letter-spacing: 0.168rem;
+  text-decoration-line: underline;
+}
+
+.achieve-item-desc {
+  color: var(--primary-text-desc-color);
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.about__video-wrap {
+  position: relative;
+  margin-top: 70px;
+}
+
+.play-btn-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 111px;
+  height: 111px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-label-wrap {
+  position: absolute;
+  background: #fff;
+  padding: 16px 28px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.video__info {
+  color: var(--primary-text-desc-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.67;
+  text-transform: uppercase;
 }
