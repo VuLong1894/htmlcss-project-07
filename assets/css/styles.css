@@ -918,3 +918,54 @@ textarea {
   width: 370px;
   object-fit: cover;
 }
+
+/* Contact */
+.contact {
+  position: relative;
+  width: 1330px;
+  max-width: 100%;
+  background: #fbfaff;
+  margin: 60px auto 0;
+}
+
+.contact__inner {
+  padding: 68px 374px;
+}
+
+.contact__content {
+  text-align: center;
+}
+
+.contact__img {
+  display: block;
+  width: 90px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.contact__heading,
+.contact__desc {
+  margin-top: 20px;
+}
+
+.contact__cta-btn {
+  margin: 42px auto 0;
+}
+
+.contact__decor:nth-of-type(1) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.contact__decor:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact__decor:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
