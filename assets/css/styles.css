@@ -653,3 +653,226 @@ textarea {
   right: 0;
   bottom: 0;
 }
+
+/* Question */
+.question {
+  margin-top: 95px;
+}
+
+.question__inner {
+  max-width: 86%;
+}
+
+.question__list {
+  padding-top: 20px;
+}
+
+.question__heading {
+  width: 575px;
+}
+
+.question__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  border-bottom: 2px solid #08182f;
+}
+
+.question__content {
+  padding: 22px;
+}
+
+.question__item-ask {
+  color: var(--primary-text-title-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.question__item-answer {
+  width: 487px;
+  display: none;
+  color: var(--primary-text-desc-color);
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-top: 23px;
+}
+
+.question__collapse-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 26, 28, 0.2);
+}
+
+.question-btn {
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.question1__check:checked ~ .question__item {
+  border-color: var(--primary-bg-color);
+}
+
+.question1__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-ask {
+  color: var(--primary-bg-color);
+}
+
+.question1__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-answer {
+  display: block;
+}
+
+.question1__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question-btn {
+  content: url("../img/close-btn.png");
+}
+
+.question1__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question__close-btn {
+  display: block;
+}
+
+.question2__check:checked ~ .question__item {
+  border-color: var(--primary-bg-color);
+}
+
+.question2__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-ask {
+  color: var(--primary-bg-color);
+}
+
+.question2__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-answer {
+  display: block;
+}
+
+.question2__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question-btn {
+  content: url("../img/close-btn.png");
+}
+
+.question2__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question__close-btn {
+  display: block;
+}
+
+.question3__check:checked ~ .question__item {
+  border-color: var(--primary-bg-color);
+}
+
+.question3__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-ask {
+  color: var(--primary-bg-color);
+}
+
+.question3__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-answer {
+  display: block;
+}
+
+.question3__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question-btn {
+  content: url("../img/close-btn.png");
+}
+
+.question3__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question__close-btn {
+  display: block;
+}
+
+.question4__check:checked ~ .question__item {
+  border-color: var(--primary-bg-color);
+}
+
+.question4__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-ask {
+  color: var(--primary-bg-color);
+}
+
+.question4__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-answer {
+  display: block;
+}
+
+.question4__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question-btn {
+  content: url("../img/close-btn.png");
+}
+
+.question4__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question__close-btn {
+  display: block;
+}
+
+.question5__check:checked ~ .question__item {
+  border-color: var(--primary-bg-color);
+}
+
+.question5__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-ask {
+  color: var(--primary-bg-color);
+}
+
+.question5__check:checked
+  ~ .question__item
+  .question__content
+  .question__item-answer {
+  display: block;
+}
+
+.question5__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question-btn {
+  content: url("../img/close-btn.png");
+}
+
+.question5__check:checked
+  ~ .question__item
+  .question__collapse-btn
+  .question__close-btn {
+  display: block;
+}
