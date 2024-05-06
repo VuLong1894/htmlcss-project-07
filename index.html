@@ -43,6 +43,11 @@
     <link rel="stylesheet" href="./assets/css/gird.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
@@ -50,8 +55,8 @@
       <img src="./assets/img/logo.svg" alt="hi@arif" class="logo-img" />
       <div class="header__inner">
         <div class="contact__email-wrap">
-          <figure class="contact__img-wrap">
-            <img src="./assets/img/email-box.svg" alt="" class="contact__img" />
+          <figure class="email__img-wrap">
+            <img src="./assets/img/email-box.svg" alt="" class="email__img" />
           </figure>
           <p class="contact__email">hi@arif.interactive</p>
         </div>
@@ -74,14 +79,63 @@
         </nav>
       </div>
     </header>
+    <!-- Header mobile -->
+    <header class="mobile-header not-pc">
+      <!-- Menu checkbox -->
+      <input
+        type="checkbox"
+        name="menu__checkbox"
+        id="menu__checkbox"
+        class="menu__checkbox"
+        hidden
+      />
+      <!-- Menu overlay -->
+      <label for="menu__checkbox" class="menu__overlay"></label>
+      <!-- Menu drawer -->
+      <div class="menu__drawer">
+        <img src="./assets/img/logo-mobile.svg" alt="Arif logo" />
+        <ul class="navbar__list-moblie">
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Journey</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Service</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#!" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        src="./assets/img/logo-mobile.svg"
+        alt="hi@arif"
+        class="logo_mobile-img"
+      />
+      <div class="mobile-header__inner">
+        <figure class="email__img-wrap">
+          <img src="./assets/img/email-box.svg" alt="" class="email__img" />
+        </figure>
+        <label for="menu__checkbox">
+          <img src="./assets/img/menu.svg" alt="menu" class="menu-img" />
+        </label>
+      </div>
+    </header>
     <!--Main -->
     <main>
       <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero__media">
+          <div class="row hero__row">
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="hero__media"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
                 <figure class="hero__media-wrap">
                   <img
                     src="./assets/img/hero-01.png"
@@ -96,7 +150,7 @@
                 </figure>
               </div>
             </div>
-            <div class="col-lg-5 offset-lg-1">
+            <div class="col-lg-5 offset-lg-1 col-md-12">
               <section class="hero__content">
                 <h1 class="hero__title">An Interactive Designer</h1>
                 <p class="section-desc hero__desc">
@@ -149,11 +203,21 @@
         <div class="container">
           <div class="row">
             <div class="client__inner">
-              <div class="col col-lg-4">
-                <h2 class="client__title">Meet my recent clients</h2>
+              <div class="col col-lg-4 col-md-1">
+                <h2
+                  class="client__title"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
+                  Meet my recent clients
+                </h2>
               </div>
-              <div class="col col-lg-8">
-                <div class="client__list">
+              <div class="col col-lg-8 col-md-1">
+                <div
+                  class="client__list"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                >
                   <a href="#!">
                     <img
                       src="./assets/img/google.svg"
@@ -226,10 +290,14 @@
             non nisl tincidunt ut elementum turpis.
           </p>
           <div class="special__list">
-            <div class="row row-cols-3">
-              <div class="col">
+            <div class="row special__row">
+              <div class="col col-lg-4 col-sm-12">
                 <!-- Special item 01 -->
-                <article class="special__item">
+                <article
+                  class="special__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <figure class="special__item-img-wrap">
                     <img
                       src="./assets/img/special-01.png"
@@ -244,9 +312,13 @@
                   </p>
                 </article>
               </div>
-              <div class="col">
+              <div class="col col-lg-4 col-sm-12">
                 <!-- Special item 02 -->
-                <article class="special__item">
+                <article
+                  class="special__item"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <figure class="special__item-img-wrap">
                     <img
                       src="./assets/img/special-02.png"
@@ -261,9 +333,13 @@
                   </p>
                 </article>
               </div>
-              <div class="col">
+              <div class="col col-lg-4 col-sm-12">
                 <!-- Special item 03 -->
-                <article class="special__item">
+                <article
+                  class="special__item"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <figure class="special__item-img-wrap">
                     <img
                       src="./assets/img/special-03.png"
@@ -280,21 +356,26 @@
               </div>
             </div>
           </div>
+          <div class="special__dots not-pc">
+            <div class="special__dot"></div>
+            <div class="special__dot special__dot--active"></div>
+            <div class="special__dot"></div>
+          </div>
         </div>
       </section>
 
       <!-- Project -->
       <section class="project">
         <div class="container">
-          <div class="project__content">
-            <div class="row row-cols-2">
-              <div class="col">
+          <div class="row">
+            <div class="project__content">
+              <div class="col col-lg-6 col-md-12">
                 <p class="section-heading project__heading">
                   Take a look at <br />
                   my recent projects
                 </p>
               </div>
-              <div class="col">
+              <div class="col col-lg-6 col-md-12">
                 <p class="section-desc project__desc">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                   urna, non nisl tincidunt ut elementum turpis.
@@ -302,11 +383,16 @@
               </div>
             </div>
           </div>
+
           <div class="project__list">
-            <div class="row row-cols-2">
+            <div class="row center">
               <!-- Project item 01 -->
-              <div class="col">
-                <article class="project__item">
+              <div class="col col-lg-6 col-md-12">
+                <article
+                  class="project__item"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                >
                   <div class="project__item-wrap">
                     <div class="project__item-content">
                       <h3 class="project__item-title">Wally Website</h3>
@@ -326,8 +412,12 @@
                 </article>
               </div>
               <!-- Project item 02 -->
-              <div class="col">
-                <article class="project__item">
+              <div class="col col-lg-6 col-md-12">
+                <article
+                  class="project__item"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <div class="project__item-wrap">
                     <div class="project__item-content">
                       <h3 class="project__item-title">Banking App</h3>
@@ -347,8 +437,12 @@
                 </article>
               </div>
               <!-- Project item 03 -->
-              <div class="col">
-                <article class="project__item">
+              <div class="col col-lg-6 col-md-12">
+                <article
+                  class="project__item"
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                >
                   <div class="project__item-wrap">
                     <div class="project__item-content">
                       <h3 class="project__item-title">Web App</h3>
@@ -368,8 +462,12 @@
                 </article>
               </div>
               <!-- Project item 04 -->
-              <div class="col">
-                <article class="project__item">
+              <div class="col col-lg-6 col-md-12">
+                <article
+                  class="project__item"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                >
                   <div class="project__item-wrap">
                     <div class="project__item-content">
                       <h3 class="project__item-title">Oculus Website</h3>
@@ -390,14 +488,24 @@
               </div>
             </div>
           </div>
-          <a href="#!" class="btn project__btn-more">All Projects</a>
+          <a
+            href="#!"
+            class="btn project__btn-more"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+            >All Projects</a
+          >
         </div>
       </section>
 
       <!-- About -->
       <section class="about">
         <div class="container">
-          <div class="about__content">
+          <div
+            class="about__content"
+            data-aos="flip-left"
+            data-aos-duration="400"
+          >
             <div class="about__welcome">
               <p class="welcome__title">Hey,,,,It's Arif</p>
               <img
@@ -414,29 +522,41 @@
           </div>
           <div class="about__achieve-list">
             <!-- Achieve item 01-->
-            <div class="achieve-item">
+            <div
+              class="achieve-item"
+              data-aos="flip-left"
+              data-aos-duration="500"
+            >
               <p class="achieve-item-number">08+</p>
               <p class="achieve-item-desc">Years Experience</p>
             </div>
             <!-- Achieve item 02-->
-            <div class="achieve-item">
+            <div
+              class="achieve-item"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
               <p class="achieve-item-number">21+</p>
               <p class="achieve-item-desc">Features & Awards</p>
             </div>
             <!-- Achieve item 03-->
-            <div class="achieve-item">
+            <div
+              class="achieve-item"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <p class="achieve-item-number">97%</p>
               <p class="achieve-item-desc">Clients Rating</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="about__video-wrap">
-                <video
-                  class="about__video"
-                  src="#"
-                  poster="./assets/img/about-video-poster.png"
-                ></video>
+          <div class="row center">
+            <div class="col col-sm-12">
+              <div
+                class="about__video-wrap"
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <video class="about__video" src="#"></video>
                 <div class="play-btn-wrap">
                   <img
                     src="./assets/img/play-video.svg"
@@ -626,7 +746,7 @@
                   </div>
                   <label for="question1__check" class="question__collapse-btn">
                     <img
-                      src="./assets/img/open-btn.png"
+                      src="./assets/img/open-btn.svg"
                       alt=""
                       class="question-btn"
                     />
@@ -655,7 +775,7 @@
                   </div>
                   <label for="question2__check" class="question__collapse-btn">
                     <img
-                      src="./assets/img/open-btn.png"
+                      src="./assets/img/open-btn.svg"
                       alt=""
                       class="question-btn"
                     />
@@ -683,7 +803,7 @@
                   </div>
                   <label for="question3__check" class="question__collapse-btn">
                     <img
-                      src="./assets/img/open-btn.png"
+                      src="./assets/img/open-btn.svg"
                       alt=""
                       class="question-btn"
                     />
@@ -711,7 +831,7 @@
                   </div>
                   <label for="question4__check" class="question__collapse-btn">
                     <img
-                      src="./assets/img/open-btn.png"
+                      src="./assets/img/open-btn.svg"
                       alt=""
                       class="question-btn"
                     />
@@ -739,7 +859,7 @@
                   </div>
                   <label for="question5__check" class="question__collapse-btn">
                     <img
-                      src="./assets/img/open-btn.png"
+                      src="./assets/img/open-btn.svg"
                       alt=""
                       class="question-btn"
                     />
@@ -762,23 +882,43 @@
             </p>
             <p class="atmosphere__tag">@interaction_arif</p>
           </div>
-          <div class="atmosphere__list-img">
-            <div class="row row-cols-3">
-              <div class="col">
+
+          <div class="row">
+            <div class="atmosphere__inner">
+              <div class="atmosphere__list-img only-pc">
+                <div class="col col-lg-3">
+                  <img
+                    src="./assets/img/atmosphere-01.png"
+                    alt="atmosphere01"
+                    class="atmosphere__img"
+                  />
+                </div>
+                <div class="col col-lg-3">
+                  <img
+                    src="./assets/img/atmosphere-02.png"
+                    alt="atmosphere02"
+                    class="atmosphere__img"
+                  />
+                </div>
+                <div class="col col-lg-3">
+                  <img
+                    src="./assets/img/atmosphere-03.png"
+                    alt="atmosphere03"
+                    class="atmosphere__img"
+                  />
+                </div>
+              </div>
+              <div class="atmosphere-mobile__list-img not-pc">
                 <img
                   src="./assets/img/atmosphere-01.png"
                   alt="atmosphere01"
                   class="atmosphere__img"
                 />
-              </div>
-              <div class="col">
                 <img
                   src="./assets/img/atmosphere-02.png"
                   alt="atmosphere02"
                   class="atmosphere__img"
                 />
-              </div>
-              <div class="col">
                 <img
                   src="./assets/img/atmosphere-03.png"
                   alt="atmosphere03"
@@ -786,6 +926,13 @@
                 />
               </div>
             </div>
+          </div>
+          <div class="atmosphere__dots not-pc">
+            <div class="atmosphere__dot"></div>
+            <div class="atmosphere__dot"></div>
+            <div class="atmosphere__dot atmosphere__dot--active"></div>
+            <div class="atmosphere__dot"></div>
+            <div class="atmosphere__dot"></div>
           </div>
         </div>
       </section>
@@ -833,8 +980,8 @@
       <img src="./assets/img/logo.svg" alt="hi@arif" class="logo-footer-img" />
       <div class="footer__inner">
         <div class="contact__email-wrap">
-          <figure class="contact__img-wrap">
-            <img src="./assets/img/email-box.svg" alt="" class="contact__img" />
+          <figure class="email__img-wrap">
+            <img src="./assets/img/email-box.svg" alt="" class="email__img" />
           </figure>
           <p class="contact__email">hi@arif.interactive</p>
         </div>
@@ -867,5 +1014,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

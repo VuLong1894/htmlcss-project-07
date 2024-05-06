@@ -90,7 +90,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 135px;
+  padding: 0 8.5%;
 }
 
 .contact__email-wrap {
@@ -98,7 +98,7 @@ textarea {
   align-items: center;
 }
 
-.contact__img-wrap {
+.email__img-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +106,11 @@ textarea {
   height: 47px;
   border: 1px solid rgba(93, 59, 238, 0.2);
   border-radius: 50%;
+}
+
+.email__img {
+  display: block;
+  object-fit: cover;
 }
 
 .contact__email {
@@ -154,7 +159,6 @@ textarea {
 
 .hero__media {
   position: absolute;
-  bottom: 0;
 }
 
 .hero__media-wrap {
@@ -172,8 +176,8 @@ textarea {
 
 .hero__decor-left {
   position: absolute;
+  top: 0;
   left: -220px;
-  bottom: 0;
 }
 
 .hero__decor-right {
@@ -233,6 +237,8 @@ textarea {
 .client__inner {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 .client__title {
@@ -277,6 +283,7 @@ textarea {
 
 .special__desc {
   width: 570px;
+  max-width: 100%;
   margin: 20px auto 0px;
 }
 
@@ -327,6 +334,11 @@ textarea {
 }
 
 .project__content {
+  width: 998px;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 160px;
   padding-left: 0px !important;
   margin-bottom: 40px;
 }
@@ -338,10 +350,9 @@ textarea {
 }
 
 .project__desc {
-  width: 370px;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 28px;
   margin-top: 31px;
+  margin-left: -28px;
 }
 
 .project__item {
@@ -371,7 +382,7 @@ textarea {
 
 .project__item-title {
   color: var(--primary-text-title-color);
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.128rem;
@@ -466,6 +477,7 @@ textarea {
 .about__achieve-list::after {
   content: "";
   width: 946px;
+  max-width: 100%;
   height: 1px;
   background: rgba(8, 4, 21, 0.2);
   position: absolute;
@@ -500,7 +512,11 @@ textarea {
 }
 
 .about__video {
-  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/about-video-poster.png) no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
 
 .play-btn-wrap {
@@ -750,7 +766,7 @@ textarea {
   ~ .question__item
   .question__collapse-btn
   .question-btn {
-  content: url("../img/close-btn.png");
+  content: url("../img/close-btn.svg");
 }
 
 .question1__check:checked
@@ -782,7 +798,7 @@ textarea {
   ~ .question__item
   .question__collapse-btn
   .question-btn {
-  content: url("../img/close-btn.png");
+  content: url("../img/close-btn.svg");
 }
 
 .question2__check:checked
@@ -814,7 +830,7 @@ textarea {
   ~ .question__item
   .question__collapse-btn
   .question-btn {
-  content: url("../img/close-btn.png");
+  content: url("../img/close-btn.svg");
 }
 
 .question3__check:checked
@@ -846,7 +862,7 @@ textarea {
   ~ .question__item
   .question__collapse-btn
   .question-btn {
-  content: url("../img/close-btn.png");
+  content: url("../img/close-btn.svg");
 }
 
 .question4__check:checked
@@ -878,7 +894,7 @@ textarea {
   ~ .question__item
   .question__collapse-btn
   .question-btn {
-  content: url("../img/close-btn.png");
+  content: url("../img/close-btn.svg");
 }
 
 .question5__check:checked
@@ -892,6 +908,11 @@ textarea {
 .atmosphere {
   margin-top: 40px;
   padding: 40px 0;
+}
+
+.atmosphere__inner {
+  overflow: hidden;
+  margin: 60px 20px;
 }
 
 .atmosphere__content {
@@ -921,6 +942,7 @@ textarea {
 
 .atmosphere__list-img {
   margin-top: 70px;
+  display: flex;
 }
 
 .atmosphere__img {
@@ -939,11 +961,16 @@ textarea {
 }
 
 .contact__inner {
-  padding: 68px 374px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 0;
 }
 
 .contact__content {
   text-align: center;
+  width: 574px;
+  max-width: 100%;
 }
 
 .contact__img {
@@ -966,8 +993,10 @@ textarea {
   position: absolute;
   left: 0;
   bottom: 0;
+  display: none;
 }
 .contact__decor:nth-of-type(2) {
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 50%;
@@ -978,6 +1007,7 @@ textarea {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
 }
 
 /* Footer */
@@ -989,11 +1019,21 @@ textarea {
 }
 
 .footer__inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(12, 7, 32, 0.2);
-  padding: 0 50px 62px;
+  padding: 0 50px;
+}
+
+.footer__inner::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: rgba(12, 7, 32, 0.2);
+  bottom: -59px;
+  left: 0;
+  right: 0;
 }
 
 .logo-footer-img {
@@ -1008,7 +1048,7 @@ textarea {
 }
 
 .copyright {
-  padding: 18px 130px 30px;
+  padding: 77px 130px 30px;
   color: rgba(82, 87, 113, 0.6);
   font-size: 18px;
   line-height: 1.67;
